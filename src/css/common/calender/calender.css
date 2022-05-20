@@ -1,0 +1,118 @@
+.calender {
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.month {
+  padding: 2rem;
+  width: 100%;
+  background: #368e36;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.month ul {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.month ul li {
+  color: white;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}
+
+.month ul .date {
+  font-size: 1.5rem;
+}
+
+.month ul .prev,
+.month ul .next {
+  cursor: pointer;
+}
+
+.weekdays {
+  margin: 0;
+  padding: 1rem 0;
+  background-color: #ddd;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: calc(100% / 7);
+  color: #666;
+  margin: 0 0.5rem;
+  text-align: center;
+}
+
+.days {
+  padding: 1rem 0;
+  background: #eee;
+  margin: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: calc(100% / 7);
+  text-align: center;
+  font-size: 1.2rem;
+  border: 0.1rem solid #eee;
+  color: #777;
+  padding: 0.5rem;
+  -webkit-transition: 0.1s ease;
+  transition: 0.1s ease;
+  cursor: pointer;
+}
+
+.days li.active {
+  background: #368e36;
+  color: white !important;
+}
+
+.days li:hover {
+  background: #368e36;
+  color: white !important;
+}
+/*# sourceMappingURL=calender.css.map */

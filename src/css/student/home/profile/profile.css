@@ -1,0 +1,121 @@
+.profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f9f8fe;
+  padding: 2rem 3rem;
+  border-radius: 2rem;
+  -webkit-box-shadow: 0.1rem 0.1rem 0.5rem 0.1rem lightgray;
+          box-shadow: 0.1rem 0.1rem 0.5rem 0.1rem lightgray;
+}
+
+@media (max-width: 576px) {
+  .profile {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding: 1rem !important;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+
+.profile .profile_left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 8;
+      -ms-flex: 8;
+          flex: 8;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 1rem 2rem;
+}
+
+.profile .profile_left .profile_title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+@media (max-width: 380px) {
+  .profile .profile_left .profile_title {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.profile .profile_left .profile_body {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+
+@media (max-width: 380px) {
+  .profile .profile_left .profile_body {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+  }
+}
+
+.profile .profile_left .profile_footer button {
+  border: none;
+  outline: none;
+  padding: 1.2rem 3rem;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  background-color: #368e36;
+  color: #f9f8fe;
+  cursor: pointer;
+}
+
+@media (max-width: 380px) {
+  .profile .profile_left .profile_footer button {
+    padding: 0.75rem 2rem;
+  }
+}
+
+.profile .profile_right {
+  max-width: 20rem;
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+}
+
+.profile .profile_right img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 968px) {
+  .profile {
+    padding: 2rem;
+  }
+  .profile .profile_left {
+    padding: 1rem;
+  }
+}
+/*# sourceMappingURL=profile.css.map */

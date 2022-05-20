@@ -1,0 +1,97 @@
+.course {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2rem 0;
+
+    @media (max-width: 576px) {
+        padding: 1rem;
+    }
+
+    .course_heading {
+        width: 100%;
+        padding: 1rem 0.5rem;
+        margin: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 600;
+        border-bottom: 0.2rem solid rgba(211, 211, 211, 0.308);
+
+        .leftHeading {
+            font-size: 2rem;
+
+            @media (max-width: 380px) {
+                font-size: 1.75rem;
+            }
+        }
+        .rightHeading {
+            font-size: 1rem;
+            cursor: pointer;
+            letter-spacing: 0.05rem;
+        }
+    }
+
+    .course_lists {
+        width: 100%;
+        .card-wrapper {
+            padding: 2rem 1rem;
+
+            @media (max-width: 576px) {
+                padding: 2rem 8rem;
+            }
+
+            @media (max-width: 380px) {
+                padding: 2rem;
+            }
+        }
+        .card {
+            padding: 2rem 1rem;
+            .course_title {
+                height: 30%;
+                font-size: 1.5rem;
+                text-align: center;
+                font-weight: 500;
+                letter-spacing: 0.05rem;
+                margin-bottom: 1rem;
+
+                @media (max-width: 576px) {
+                    font-size: 1.75rem;
+                }
+            }
+            .course_teacher {
+                height: 45%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .courseTeacher_head {
+                    font-size: 1.25rem;
+                    color: gray;
+                    margin-bottom: 0.3rem;
+
+                    @media (max-width: 576px) {
+                        font-size: 1.5rem;
+                    }
+                }
+                .courseTeacher_body {
+                    font-size: 1.35rem;
+                    font-weight: 500;
+                    @media (max-width: 576px) {
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+            .course_footer {
+                height: 25%;
+                width: 100%;
+                @media (max-width: 576px) {
+                    padding: 0 1rem;
+                }
+            }
+        }
+    }
+}

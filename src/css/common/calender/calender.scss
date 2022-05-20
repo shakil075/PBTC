@@ -1,0 +1,91 @@
+.calender {
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.month {
+    padding: 2rem;
+    width: 100%;
+    background: rgb(54, 142, 54);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.month ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    li {
+        color: white;
+        font-size: 2rem;
+        text-transform: uppercase;
+        letter-spacing: 0.3rem;
+    }
+
+    .date {
+        font-size: 1.5rem;
+    }
+
+    .prev,
+    .next {
+        cursor: pointer;
+    }
+}
+
+.weekdays {
+    margin: 0;
+    padding: 1rem 0;
+    background-color: #ddd;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    li {
+        display: inline-block;
+        width: calc(100% / 7);
+        color: #666;
+        margin: 0 0.5rem;
+        text-align: center;
+    }
+}
+
+.days {
+    padding: 1rem 0;
+    background: #eee;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+
+    li {
+        list-style-type: none;
+        display: inline-block;
+        width: calc(100% / 7);
+        text-align: center;
+        font-size: 1.2rem;
+        border: 0.1rem solid #eee;
+        color: #777;
+        padding: 0.5rem;
+        transition: 0.1s ease;
+        cursor: pointer;
+
+        &.active {
+            background: rgb(54, 142, 54);
+            color: white !important;
+        }
+
+        &:hover {
+            background: rgb(54, 142, 54);
+            color: white !important;
+        }
+    }
+}
