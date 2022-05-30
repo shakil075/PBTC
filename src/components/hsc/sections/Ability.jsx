@@ -11,7 +11,7 @@ import global from "../../../img/pages/global.png";
 
 const Ability = () => {
     return (
-        <section class="ability small-container">
+        <section class="ability container">
             <div class="ability-head">
                 <h2 class="text-center">
                     8 ABILITIES THAT

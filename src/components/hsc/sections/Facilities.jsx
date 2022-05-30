@@ -8,7 +8,7 @@ const Facilities = () => {
         <section class="facility">
             <div class="container">
                 <h2 class="text-center">Our Lab Facilities</h2>
-                <div class="row">
+                <div class="row justify-content-center align-items-center">
                     <FacilityLists
                         cls="green"
                         image={physics}

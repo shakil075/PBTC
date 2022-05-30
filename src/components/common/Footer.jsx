@@ -5,7 +5,7 @@ const Footer = () => {
         <footer>
             <div class="container">
                 <div class="row g-5">
-                    <div class="col-md-3 d-flex flex-column justify-content-center align-items-center">
+                    <div class="col-md-3 col-12 d-flex flex-column justify-content-center align-items-center">
                         <div class="logo-footer d-flex justify-content-center align-items-center">
                             <h3>College logo</h3>
                         </div>
@@ -27,7 +27,7 @@ const Footer = () => {
                             </li>
                         </ul>
                     </div>
-                    <div class="col-md-3 d-flex justify-content-center align-items-center">
+                    <div class="col-md-3 d-flex col-12 justify-content-center align-items-center">
                         <ul class="foot-content">
                             <li>
                                 <a href="">3400 S. 43rd St.</a>
@@ -49,7 +49,7 @@ const Footer = () => {
                             </li>
                         </ul>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-12 d-flex justify-content-center align-items-center">
                         <ul class="foot-content">
                             <li>
                                 <a href="">Careers at our college</a>
@@ -68,7 +68,7 @@ const Footer = () => {
                             </li>
                         </ul>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-12 d-flex justify-content-center align-items-center">
                         <ul class="foot-content">
                             <li>
                                 <a href="">Faculty & Staff</a>

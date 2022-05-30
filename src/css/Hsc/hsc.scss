@@ -18,7 +18,7 @@ h2 {
 }
 
 p {
-    font-family: "Open Sans", sans-serif;
+    // font-family: "Open Sans", sans-serif;
     color: #666464;
 }
 .small-container {
@@ -63,7 +63,7 @@ section {
     height: 53.9rem;
     position: relative;
 
-    @media screen and (max-width: 780px) {
+    @media screen and (max-width: 768px) {
         height: 100% !important;
     }
 
@@ -75,7 +75,7 @@ section {
         );
         width: 43%;
         height: 53.9rem;
-        @media screen and (max-width: 780px) {
+        @media screen and (max-width: 768px) {
             width: 60%;
             height: 43rem;
         }
@@ -95,7 +95,7 @@ section {
             padding-left: 3rem;
             color: #fff;
 
-            @media screen and (max-width: 780px) {
+            @media screen and (max-width: 768px) {
                 width: 42%;
                 height: 43rem;
             }
@@ -106,13 +106,13 @@ section {
                 margin-bottom: 2rem;
                 width: 80%;
 
-                @media screen and (max-width: 780px) {
-                    font-size: 3rem;
+                @media screen and (max-width: 768px) {
+                    font-size: 3.5rem;
                 }
             }
             small {
                 font-size: 1.2rem;
-                @media screen and (max-width: 780px) {
+                @media screen and (max-width: 768px) {
                     width: 90%;
                     font-size: 1.25rem;
                 }
@@ -131,7 +131,7 @@ section {
             top: 0;
             left: 2%;
 
-            @media screen and (max-width: 780px) {
+            @media screen and (max-width: 768px) {
                 width: 80%;
                 height: 43rem;
             }
@@ -273,9 +273,23 @@ section {
             0 6px 20px 0 rgba(0, 0, 0, 0.19);
         transition: 0.3s ease-in-out;
 
-        &:hover {
-            transform: translateY(-0.4rem);
-            box-shadow: 0 0 0.5rem 0 #00000073;
+        .btn {
+            font-size: 1.25rem;
+        }
+
+        @media screen and (max-width: 576px) {
+            max-width: 30rem;
+
+            .btn {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media screen and (min-width: 577px) {
+            &:hover {
+                transform: translateY(-0.4rem);
+                box-shadow: 0 0 0.5rem 0 #00000073;
+            }
         }
 
         .card-title {
@@ -363,6 +377,9 @@ section {
 .facility .lab-img {
     width: 70%;
     height: 20rem;
+    @media screen and (max-width: 991px) and (min-width: 769px) {
+        width: 85%;
+    }
 }
 .facility .lab {
     position: relative;
@@ -375,18 +392,22 @@ section {
     border-radius: 1rem;
 }
 .lab-content {
-    width: 20rem;
-    height: 10rem;
+    width: 15rem;
+    height: 6rem;
     border-radius: 1rem;
     background: #d31c5a;
     color: #fff;
     font-size: 1.8rem;
     position: absolute;
-    bottom: -5rem;
-    right: 6rem;
+    bottom: -2.5rem;
+    right: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media screen and (max-width: 991px) and (min-width: 769px) {
+        right: 1rem;
+    }
 }
 
 .green {
@@ -418,34 +439,36 @@ section {
             color: #98002e;
             border-radius: 0.5rem;
             box-shadow: inset 0 0 0.2rem 0.1rem #98002e;
-            font-weight: 900;
+            font-weight: 700;
             font-size: 1.6rem;
             margin: 0 0.7rem;
             text-transform: uppercase;
             overflow: hidden;
             transform: 0.3s ease;
 
-            &::before {
-                content: "";
-                position: absolute;
-                background-color: #98002e;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                color: #fff;
-                width: 150%;
-                height: 800%;
-                left: 50%;
-                top: 100%;
-                transform: translateX(-50%);
-                border-radius: 50%;
-                transition: 0.3s;
-            }
+            @media screen and (min-width: 577px) {
+                &::before {
+                    content: "";
+                    position: absolute;
+                    background-color: #98002e;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: #fff;
+                    width: 150%;
+                    height: 800%;
+                    left: 50%;
+                    top: 100%;
+                    transform: translateX(-50%);
+                    border-radius: 50%;
+                    transition: 0.3s;
+                }
 
-            &:hover::before {
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
+                &:hover::before {
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
             }
         }
     }
@@ -480,16 +503,16 @@ section {
     object-fit: cover;
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 768px) {
     html {
         font-size: 52%;
     }
-    footer {
-        text-align: center;
-    }
-    .logo-icon {
-        justify-content: center;
-    }
+    // footer {
+    //     text-align: center;
+    // }
+    // .logo-icon {
+    //     justify-content: center;
+    // }
     .sub-footer {
         background-position: left;
         background-size: cover;

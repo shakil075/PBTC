@@ -2,7 +2,7 @@ import React from "react";
 
 const AbilityLists = ({ image, title }) => {
     return (
-        <div class="col-md-3">
+        <div class="col-md-3 col-sm-4 col-6 ">
             <div class="ability-content">
                 <img src={image} alt="" class="icon" />
 
