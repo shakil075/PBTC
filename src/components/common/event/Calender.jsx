@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../../../css/common/calender/calender.css";
 
-const Calender = ({ pickDate }) => {
+const Calender = ({ pickDate, selectedDay }) => {
     const [data, setData] = useState(new Date());
     const date = new Date(data);
     const day = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
@@ -13,11 +13,8 @@ const Calender = ({ pickDate }) => {
         0
     ).getDate();
 
-    const now = date.toLocaleDateString("en-US", {
-        year: "numeric",
-        month: "short",
-        day: "numeric",
-    });
+    const spliter = date.setDate(selectedDay);
+    const now = new Date(spliter).toDateString();
 
     const dayArray = () => {
         const dArr = [];
@@ -59,7 +56,9 @@ const Calender = ({ pickDate }) => {
                     <li onClick={prevBtn} class="prev">
                         &#10094;
                     </li>
-                    <li class="date">{now}</li>
+                    <li id="selectedDay" class="date">
+                        {now}
+                    </li>
                     <li onClick={nextBtn} class="next">
                         &#10095;
                     </li>
@@ -72,21 +71,21 @@ const Calender = ({ pickDate }) => {
                 ))}
             </ul>
 
-            <ul class="days">
+            <ul className="days">
                 {emptyArray().map((day, index) => (
                     <li key={index}></li>
                 ))}
                 {dayArray().map((day, index) => (
                     <li
                         key={emptyArray() + 1 + parseInt(index)}
-                        id={emptyArray() + 1 + parseInt(index)}
+                        id={now}
                         onClick={pickDate}
-                        class={
+                        className={
                             day.i === getDate &&
                             day.mobj === date.getMonth() &&
                             day.yobj === date.getFullYear()
-                                ? "active"
-                                : ""
+                                ? "active day"
+                                : "day"
                         }
                     >
                         {day.i}

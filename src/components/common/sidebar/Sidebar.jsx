@@ -11,7 +11,7 @@ const Sidebar = ({ setShow, pannel, lists }) => {
         parent.classList.remove("expand");
     };
     return (
-        <div class="side_bar">
+        <div className="side_bar">
             <ToggleBar handleToggle={handleToggle} />
             <SidebarHeader pannel={pannel} />
             <Lists setShow={setShow} lists={lists} />

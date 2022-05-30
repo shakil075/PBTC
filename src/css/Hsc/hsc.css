@@ -1,0 +1,624 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 4.2rem;
+  font-weight: 900;
+  line-height: 5rem;
+  text-transform: uppercase;
+  color: var(--primary-heading);
+  margin-bottom: 5rem;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  color: #666464;
+}
+
+.small-container {
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  width: 90rem;
+  margin: auto;
+}
+
+.back-top {
+  background: #666464;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  position: fixed;
+  right: 3.5rem;
+  bottom: 1.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+  padding: 0.7rem;
+}
+
+.back-top i {
+  color: #fff;
+  text-align: center;
+}
+
+section {
+  margin: 13rem 0;
+}
+
+.cmn-heading {
+  text-align: center;
+}
+
+/* header */
+.banner {
+  background: url("../../img/pages/banner.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 53.9rem;
+  position: relative;
+}
+
+@media screen and (max-width: 780px) {
+  .banner {
+    height: 100% !important;
+  }
+}
+
+.banner .banner-wrap {
+  background: linear-gradient(108deg, #1ba94c 65%, transparent 65%);
+  width: 43%;
+  height: 53.9rem;
+}
+
+@media screen and (max-width: 780px) {
+  .banner .banner-wrap {
+    width: 60%;
+    height: 43rem;
+  }
+}
+
+.banner .banner-wrap .banner-content {
+  height: 53.9rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 12;
+  width: 25%;
+  background: #1ba94c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 3rem;
+  color: #fff;
+}
+
+@media screen and (max-width: 780px) {
+  .banner .banner-wrap .banner-content {
+    width: 42%;
+    height: 43rem;
+  }
+}
+
+.banner .banner-wrap .banner-content h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  width: 80%;
+}
+
+@media screen and (max-width: 780px) {
+  .banner .banner-wrap .banner-content h1 {
+    font-size: 3rem;
+  }
+}
+
+.banner .banner-wrap .banner-content small {
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 780px) {
+  .banner .banner-wrap .banner-content small {
+    width: 90%;
+    font-size: 1.25rem;
+  }
+}
+
+.banner .banner-wrap .banner-angle {
+  background: linear-gradient(108deg, rgba(27, 169, 76, 0.5) 65%, transparent 65%);
+  width: 50%;
+  height: 53.9rem;
+  position: absolute;
+  top: 0;
+  left: 2%;
+}
+
+@media screen and (max-width: 780px) {
+  .banner .banner-wrap .banner-angle {
+    width: 80%;
+    height: 43rem;
+  }
+}
+
+/* subject*/
+.subject {
+  margin: 5rem auto;
+}
+
+.subject .card {
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  width: 15rem;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 0 0.1rem 0.1rem #1ba94d;
+          box-shadow: 0 0 0.1rem 0.1rem #1ba94d;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 576px) {
+  .subject .card {
+    margin: 2rem;
+    border-bottom-left-radius: 5rem;
+    border-top-right-radius: 5rem;
+  }
+}
+
+.subject .card .sub-img {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.subject .card .sub-img img {
+  width: 60%;
+  height: 60%;
+  background-color: #fff;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.subject .card.science .sub-img {
+  border: 0.3rem solid #1ba94c;
+}
+
+.subject .card.commerce {
+  -webkit-box-shadow: 0 0 0.1rem 0.1rem #f05323;
+          box-shadow: 0 0 0.1rem 0.1rem #f05323;
+}
+
+.subject .card.commerce .sub-img {
+  border: 0.3rem solid #f05323;
+}
+
+.subject .card.arts {
+  -webkit-box-shadow: 0 0 0.1rem 0.1rem #d31c5a;
+          box-shadow: 0 0 0.1rem 0.1rem #d31c5a;
+}
+
+.subject .card.arts .sub-img {
+  border: 0.3rem solid #d31c5a;
+}
+
+.subject .card:hover {
+  border-bottom-left-radius: 5rem;
+  border-top-right-radius: 5rem;
+}
+
+.subject .card::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background-color: #1ba94c;
+  width: 100%;
+  height: 100%;
+  left: -10%;
+  top: 10%;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  -webkit-transform-origin: left bottom;
+          transform-origin: left bottom;
+  border-radius: 1rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 576px) {
+  .subject .card::before {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    left: -5%;
+    top: 5%;
+  }
+}
+
+.subject .card::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background-color: #1ba94c;
+  width: 100%;
+  height: 100%;
+  right: -10%;
+  top: -10%;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  -webkit-transform-origin: right top;
+          transform-origin: right top;
+  border-radius: 1rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 576px) {
+  .subject .card::after {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    right: -5%;
+    top: -5%;
+  }
+}
+
+.subject .card:hover::before {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  left: -5%;
+  top: 5%;
+}
+
+.subject .card:hover::after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  right: -5%;
+  top: -5%;
+}
+
+.subject .card.commerce::after, .subject .card.commerce::before {
+  background-color: #f05323;
+}
+
+.subject .card.arts::after, .subject .card.arts::before {
+  background-color: #d31c5a;
+}
+
+.faculty .card {
+  border-radius: 0.6rem;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.faculty .card:hover {
+  -webkit-transform: translateY(-0.4rem);
+          transform: translateY(-0.4rem);
+  -webkit-box-shadow: 0 0 0.5rem 0 #00000073;
+          box-shadow: 0 0 0.5rem 0 #00000073;
+}
+
+.faculty .card .card-title {
+  font-size: 1.5rem;
+  cursor: default;
+}
+
+.faculty .card.science a {
+  border-color: 0.2rem solid #1ba94c;
+  background-color: #1ba94c;
+  color: #fff;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.faculty .card.science .card-footer:hover a {
+  border-color: #1ba94c;
+  background-color: transparent;
+  color: #1ba94c;
+}
+
+.faculty .card.commerce a {
+  border-color: 0.2rem solid #f05323;
+  background-color: #f05323;
+  color: #fff;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.faculty .card.commerce .card-footer:hover a {
+  border-color: #f05323;
+  background-color: transparent;
+  color: #f05323;
+}
+
+.faculty .card.arts a {
+  border-color: 0.2rem solid #D31C5A;
+  background-color: #d31c5a;
+  color: #fff;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.faculty .card.arts .card-footer:hover a {
+  border-color: #d31c5a;
+  background-color: transparent;
+  color: #d31c5a;
+}
+
+/* ability section */
+.ability p {
+  font-size: 1.6rem;
+  margin: 1.5rem auto;
+  line-height: 1.5;
+  color: #383838;
+}
+
+.ability-head {
+  margin-bottom: 7rem;
+}
+
+.ability-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  cursor: pointer;
+  margin-bottom: 4rem;
+}
+
+.ability-content img {
+  margin-bottom: 0.5rem;
+  -webkit-transition: 0.15s;
+  transition: 0.15s;
+}
+
+.ability-content img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.ability-content small {
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* Facility section */
+.facility .lab-img {
+  width: 70%;
+  height: 20rem;
+}
+
+.facility .lab {
+  position: relative;
+  margin: 4rem 0;
+}
+
+.lab-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem;
+}
+
+.lab-content {
+  width: 20rem;
+  height: 10rem;
+  border-radius: 1rem;
+  background: #d31c5a;
+  color: #fff;
+  font-size: 1.8rem;
+  position: absolute;
+  bottom: -5rem;
+  right: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.green {
+  background: #1ba94c;
+}
+
+.maroon {
+  color: #98002e;
+}
+
+.yellow {
+  color: #eea90a;
+}
+
+.yellow-back {
+  background-color: #eea90a;
+}
+
+.maroon-light {
+  color: #e5185b;
+}
+
+.apply .button,
+.faculty .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.apply .button .btn,
+.faculty .button .btn {
+  position: relative;
+  padding: 0.5rem 5rem;
+  color: #98002e;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: inset 0 0 0.2rem 0.1rem #98002e;
+          box-shadow: inset 0 0 0.2rem 0.1rem #98002e;
+  font-weight: 900;
+  font-size: 1.6rem;
+  margin: 0 0.7rem;
+  text-transform: uppercase;
+  overflow: hidden;
+  -webkit-transform: 0.3s ease;
+          transform: 0.3s ease;
+}
+
+.apply .button .btn::before,
+.faculty .button .btn::before {
+  content: "";
+  position: absolute;
+  background-color: #98002e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  width: 150%;
+  height: 800%;
+  left: 50%;
+  top: 100%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-radius: 50%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.apply .button .btn:hover::before,
+.faculty .button .btn:hover::before {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.faculty .card-footer {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0;
+}
+
+.faculty .button .btn::before {
+  content: "SEE ALL FACULTY MEMBERS";
+}
+
+.apply .button .btn::before {
+  content: "Choose Government College As Your Next Destination";
+}
+
+.sub-footer {
+  background: url("../../img/pages/sub-footer.jpg") no-repeat;
+  background-position: top;
+  background-size: cover;
+  height: 45rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (max-width: 780px) {
+  html {
+    font-size: 52%;
+  }
+  footer {
+    text-align: center;
+  }
+  .logo-icon {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .sub-footer {
+    background-position: left;
+    background-size: cover;
+    height: 45rem;
+  }
+  .facility .lab-img {
+    margin: auto;
+  }
+  .button-group .btn {
+    padding: 1rem 3rem;
+  }
+  .small-container {
+    width: 40rem;
+    margin: auto;
+  }
+  .banner-wrap {
+    background: linear-gradient(108deg, #1ba94c 65%, transparent 65%);
+    width: 43%;
+    height: 43.9rem;
+  }
+  .banner-angle {
+    background: linear-gradient(108deg, rgba(27, 169, 76, 0.5) 65%, transparent 65%);
+    height: 43.9rem;
+  }
+}
+/*# sourceMappingURL=hsc.css.map */

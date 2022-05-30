@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import Nav from "./Nav";
+import Footer from "../components/common/Footer";
+import "../css/footer/footer.css";
 
 const Layout = ({ children }) => {
+    const [windoPosition, setWindowPosition] = useState(0);
+
     let showNav = true;
 
     const pathDir = useLocation().pathname;
@@ -17,10 +21,23 @@ const Layout = ({ children }) => {
         showNav = true;
     }
 
+    useEffect(() => {
+        window.addEventListener("scroll", function () {
+            setWindowPosition(window.scrollY);
+        });
+    }, [setWindowPosition]);
+
+    useEffect(() => {
+        if (showNav) {
+            const navbar = document.querySelector("#navbar");
+            navbar.classList.toggle("scroll_active", windoPosition > 80);
+        }
+    });
     return (
         <>
             {showNav ? <Nav /> : null}
             <main>{children}</main>
+            {showNav ? <Footer /> : null}
         </>
     );
 };

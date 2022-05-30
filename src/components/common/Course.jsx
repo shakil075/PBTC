@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import CourseList from "./course/CourseList";
-import { courses } from "../../../lib/helper";
-import AbsolutePopup from "../../common/AbsolutePopup";
+import AbsolutePopup from "../common/AbsolutePopup";
 import CourseContent from "./absoluteContent/CourseContent";
-import "../../../css/student/home/course/course.css";
+import "../../css/student/home/course/course.css";
 
-const Course = () => {
+const Course = ({ pannel, courses }) => {
     const [show, setShow] = useState("");
     const [animate, setAnimate] = useState("");
     const showCourse = () => {
@@ -32,8 +31,13 @@ const Course = () => {
                         animate="animate"
                         key={key}
                         percent="60"
+                        pannel={pannel}
                         subject={course.subject}
-                        teacher={course.teacher}
+                        teacher={
+                            pannel === "student"
+                                ? course.teacher
+                                : course.degree
+                        }
                     />
                 ))}
             </div>
@@ -41,7 +45,13 @@ const Course = () => {
             <AbsolutePopup
                 show={show}
                 handleToggle={handleToggle}
-                children={<CourseContent animate={animate} />}
+                children={
+                    <CourseContent
+                        pannel={pannel}
+                        courses={courses}
+                        animate={animate}
+                    />
+                }
             />
         </div>
     );

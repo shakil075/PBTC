@@ -4,7 +4,7 @@ import "../../../css/common/content/content.css";
 
 const Content = ({ children }) => {
     return (
-        <div class="content_section">
+        <div className="content_section">
             <ContentHeader />
             {children}
         </div>

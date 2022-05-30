@@ -5,12 +5,12 @@ import Sidebar from "../components/common/sidebar/Sidebar";
 import "../css/common/dashboard/dashboard.css";
 import "../css/page/page.css";
 
-const Dashboard = ({ children, pannel, lists, setShow }) => {
+const Dashboard = ({ children, pannel, lists, setShow, ui }) => {
     return (
-        <div className={`wrapper`}>
+        <div className={`wrapper ${ui}`}>
             <Sidebar pannel={pannel} lists={lists} setShow={setShow} />
             <Content children={children} />
-            <Event />
+            <Event ui={ui} />
         </div>
     );
 };

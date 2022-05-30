@@ -1,0 +1,77 @@
+.courseForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+    margin-top: 1rem;
+
+    .selectBox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 1.5rem;
+
+        label {
+            font-size: 1.5rem;
+            margin-right: 0.5rem;
+        }
+        select {
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 0.5rem;
+            border-radius: 0.2rem;
+            font-weight: 400;
+            font-size: 1.25rem;
+        }
+    }
+    button {
+        font-size: 1.25rem;
+    }
+}
+
+.attendanceForm,
+#printTable {
+    th,
+    td {
+        text-align: center;
+        vertical-align: middle;
+    }
+    th {
+        font-size: 1.5rem;
+    }
+    td {
+        font-size: 1.35rem;
+        font-weight: 400;
+        &:first-child {
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+    }
+
+    .tableSubject {
+        font-size: 2rem;
+    }
+    .tableDegree {
+        font-size: 1rem;
+    }
+
+    input[type="radio"] {
+        width: 1.5rem;
+        height: 1.5rem;
+        cursor: pointer;
+    }
+
+    .markSide {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h3 {
+            font-size: 1.5rem;
+        }
+        p {
+            font-size: 1rem;
+        }
+    }
+}

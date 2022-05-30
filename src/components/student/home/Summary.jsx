@@ -11,6 +11,8 @@ const Summary = () => {
     const [show, setShow] = useState("");
     const [animate, setAnimate] = useState("");
     const [pick, setPick] = useState(0);
+    const [day, setDay] = useState(new Date().getDate());
+
     const showSummary = () => {
         setShow("show_summary");
         setAnimate("animate");
@@ -66,6 +68,7 @@ const Summary = () => {
                     <AttendanceContent
                         handleToggle={handleToggle}
                         pickDate={pickDate}
+                        day={day}
                     />
                 }
                 children3={

@@ -1,0 +1,115 @@
+.courseForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 4rem;
+  margin-top: 1rem;
+}
+
+.courseForm .selectBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 1.5rem;
+}
+
+.courseForm .selectBox label {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.courseForm .selectBox select {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+
+.courseForm button {
+  font-size: 1.25rem;
+}
+
+.attendanceForm th,
+.attendanceForm td,
+#printTable th,
+#printTable td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.attendanceForm th,
+#printTable th {
+  font-size: 1.5rem;
+}
+
+.attendanceForm td,
+#printTable td {
+  font-size: 1.35rem;
+  font-weight: 400;
+}
+
+.attendanceForm td:first-child,
+#printTable td:first-child {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.attendanceForm .tableSubject,
+#printTable .tableSubject {
+  font-size: 2rem;
+}
+
+.attendanceForm .tableDegree,
+#printTable .tableDegree {
+  font-size: 1rem;
+}
+
+.attendanceForm input[type="radio"],
+#printTable input[type="radio"] {
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+}
+
+.attendanceForm .markSide,
+#printTable .markSide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.attendanceForm .markSide h3,
+#printTable .markSide h3 {
+  font-size: 1.5rem;
+}
+
+.attendanceForm .markSide p,
+#printTable .markSide p {
+  font-size: 1rem;
+}
+/*# sourceMappingURL=attendance.css.map */

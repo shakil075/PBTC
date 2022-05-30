@@ -1,8 +1,7 @@
 import React from "react";
 import CourseList from "../course/CourseList";
-import { courses } from "../../../../lib/helper";
 
-const CourseContent = ({ animate }) => {
+const CourseContent = ({ animate, pannel, courses }) => {
     return (
         <div className="course_content row justify-content-center">
             {courses.map((course, key) => (
@@ -12,7 +11,9 @@ const CourseContent = ({ animate }) => {
                     animate={animate}
                     percent="60"
                     subject={course.subject}
-                    teacher={course.teacher}
+                    teacher={
+                        pannel === "student" ? course.teacher : course.degree
+                    }
                 />
             ))}
         </div>

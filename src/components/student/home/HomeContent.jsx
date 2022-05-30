@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Activities from "./Activities";
-import Course from "./Course";
-import Profile from "./Profile";
+import Course from "../../common/Course";
+import Profile from "../../common/Profile";
 import Summary from "./Summary";
+import { courses } from "../../../lib/helper";
 
 const HomeContent = () => {
     const [scrolled, setScrolled] = useState(false);
@@ -70,8 +71,8 @@ const HomeContent = () => {
 
     return (
         <div className="content_wrapper home_target">
-            <Profile />
-            <Course />
+            <Profile pannel="student" />
+            <Course pannel="teacher" courses={courses} />
             <Summary />
             <Activities />
         </div>

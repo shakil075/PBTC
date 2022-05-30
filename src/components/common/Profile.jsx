@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import avatar from "../../../img/avatar.png";
-import AbsolutePopup from "../../common/AbsolutePopup";
-import ProfileContent from "./absoluteContent/ProfileContent";
-import "../../../css/student/home/profile/profile.css";
+import avatar from "../../img/avatar.png";
+import AbsolutePopup from "./AbsolutePopup";
+import ProfileContent from "../student/home/absoluteContent/ProfileContent";
+import "../../css/student/home/profile/profile.css";
 
-const Profile = () => {
+const Profile = ({ pannel }) => {
     const [show, setShow] = useState("");
     const showProfile = () => {
         setShow("show_profile");
@@ -36,7 +36,7 @@ const Profile = () => {
             <AbsolutePopup
                 show={show}
                 handleToggle={handleToggle}
-                children={<ProfileContent avatar={avatar} />}
+                children={<ProfileContent pannel={pannel} avatar={avatar} />}
             />
         </div>
     );

@@ -208,4 +208,75 @@
     width: 16rem;
   }
 }
+
+.teacher_pannel .summary_section .progress_summary .result .result_lists .result_card .status {
+  font-size: 3rem;
+  width: 14rem;
+  height: 14rem;
+}
+
+@media (max-width: 768px) {
+  .teacher_pannel .summary_section .progress_summary .result .result_lists .result_card .status {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .teacher_pannel .summary_section .progress_summary .result .result_lists .result_card .status {
+    width: 10rem;
+    height: 10rem;
+    font-size: 2rem;
+  }
+}
+
+.teacher_pannel .summary_section .progress_summary .result .result_lists .result_card .outer {
+  width: 14rem;
+  height: 14rem;
+}
+
+@media (max-width: 480px) {
+  .teacher_pannel .summary_section .progress_summary .result .result_lists .result_card .outer {
+    width: 10rem;
+    height: 10rem;
+  }
+}
+
+.teacher_pannel .summary_section .progress_summary .result .result_lists .result_card .inner {
+  width: 11rem;
+  height: 11rem;
+}
+
+@media (max-width: 480px) {
+  .teacher_pannel .summary_section .progress_summary .result .result_lists .result_card .inner {
+    width: 8rem;
+    height: 8rem;
+  }
+}
+
+.teacher_pannel .summary_section .progress_summary .result .result_lists .result_card .inner .percent {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .teacher_pannel .summary_section .progress_summary .result .result_lists .result_card .inner .percent {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .teacher_pannel .summary_section .progress_summary .result .result_lists .result_card .inner .percent {
+    font-size: 2rem;
+  }
+}
+
+.teacher_pannel .summary_section .progress_summary .result .result_lists .result_card svg {
+  width: 19rem;
+}
+
+@media (max-width: 480px) {
+  .teacher_pannel .summary_section .progress_summary .result .result_lists .result_card svg {
+    width: 13.4rem;
+  }
+}
 /*# sourceMappingURL=summary.css.map */

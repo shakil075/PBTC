@@ -1,36 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 import Calender from "./Calender";
-import EventCard from "./EventCard";
 import { events } from "../../../lib/helper";
+import EventCover from "./EventCover";
 
-const EventBody = () => {
+const EventBody = ({ ui }) => {
     const date = new Date().toDateString();
+    const [pick, setPick] = useState("");
+    const [day, setDay] = useState(new Date().getDate());
+
+    const pickDate = (e) => {
+        const number = e.target.innerText;
+        const fullDate = e.target.id;
+        setDay(number);
+        const parent = document.querySelectorAll(".days .day");
+        parent.forEach((el) => el.classList.remove("active"));
+        e.target.classList.add("active");
+        console.log(new Date(fullDate).toDateString());
+        const datedata = document.querySelector("#selectedDay");
+        console.log(datedata);
+    };
 
     return (
-        <div class="event_body">
-            <Calender />
-            <div className="event_title">Academic Events</div>
-            <div className="events">
-                {events.map((event, index) => (
-                    <EventCard
-                        key={index}
-                        title={event.title}
-                        description={event.description}
-                        date={date}
-                    />
-                ))}
-            </div>
-            <div className="event_title">Notice</div>
-            <div className="events">
-                {events.map((event, index) => (
-                    <EventCard
-                        key={index}
-                        title={event.title}
-                        description={event.description}
-                        date={date}
-                    />
-                ))}
-            </div>
+        <div className="event_body">
+            <Calender pickDate={pickDate} selectedDay={day} />
+            {ui === "teacher_pannel" && (
+                <EventCover
+                    title="Meeting Events"
+                    events={events}
+                    date={date}
+                />
+            )}
+            <EventCover title="Academic Events" events={events} date={date} />
+            <EventCover title="Notice" events={events} date={date} />
         </div>
     );
 };

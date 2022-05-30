@@ -38,7 +38,7 @@ const Progress = styled.div`
     }
 `;
 
-const CourseList = ({ subject, teacher, percent, animate, col }) => {
+const CourseList = ({ subject, teacher, percent, animate, col, pannel }) => {
     const textContent = document.querySelectorAll(
         ".course_content .card .course_footer div span"
     );
@@ -92,7 +92,9 @@ const CourseList = ({ subject, teacher, percent, animate, col }) => {
             <div class="card">
                 <div class="course_title">{subject}</div>
                 <div class="course_teacher">
-                    <div class="courseTeacher_head">Course Teacher</div>
+                    <div class="courseTeacher_head">
+                        {pannel === "student" ? "Course Teacher" : "Degree"}
+                    </div>
                     <div class="courseTeacher_body">{teacher}</div>
                 </div>
                 <div className="course_footer">

@@ -3,11 +3,11 @@ import logo from "../../../img/college.png";
 
 const SidebarHeader = ({ pannel }) => {
     return (
-        <div class="sidebar_header">
-            <div class="sidebar_logo">
+        <div className="sidebar_header">
+            <div className="sidebar_logo">
                 <img src={logo} alt="pbtc" />
             </div>
-            <div class="sidebar_name">{pannel}</div>
+            <div className="sidebar_name">{pannel}</div>
         </div>
     );
 };

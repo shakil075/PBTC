@@ -2,11 +2,11 @@ import React from "react";
 import EventBody from "./EventBody";
 import "../../../css/common/event/event.css";
 
-const Event = () => {
+const Event = ({ ui }) => {
     return (
         <div class="event_section">
             <div class="event_header">Events Calender</div>
-            <EventBody />
+            <EventBody ui={ui} />
         </div>
     );
 };

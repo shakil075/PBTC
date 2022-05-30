@@ -1,17 +1,19 @@
 import React from "react";
 import InfoBox from "./InfoBox";
 
-const ProfileContent = ({ avatar }) => {
+const ProfileContent = ({ avatar, pannel }) => {
     return (
         <div className="profile_content">
             <div className="profile_content_header">
                 <div className="header_info">
                     <div className="user_name">
-                        Name : <span>Ahsan Shakil</span>
+                        <span>Ahsan Shakil</span>
                     </div>
-                    <div className="user_roll">
-                        Roll Number : <span>150102</span>
-                    </div>
+                    {pannel === "student" && (
+                        <div className="user_roll">
+                            Roll: <span>150102</span>
+                        </div>
+                    )}
                 </div>
                 <div className="header_img">
                     <img src={avatar} alt="student-image" />

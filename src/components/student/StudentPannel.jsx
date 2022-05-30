@@ -7,28 +7,28 @@ import Teacher from "./teacher/Teacher";
 const StudentPannel = ({ show }) => {
     if (show === "home") {
         return (
-            <div class="content_body">
+            <div className="content_body">
                 <HomeContent />
             </div>
         );
     }
     if (show === "results") {
         return (
-            <div class="content_body">
+            <div className="content_body">
                 <ResultContent />
             </div>
         );
     }
     if (show === "routine") {
         return (
-            <div class="content_body">
+            <div className="content_body">
                 <Routine />
             </div>
         );
     }
     if (show === "teacher") {
         return (
-            <div class="content_body">
+            <div className="content_body">
                 <Teacher />
             </div>
         );
