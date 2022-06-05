@@ -1,0 +1,462 @@
+.wrapper {
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 5rem 0;
+  background-color: #ededed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper:nth-child(2) {
+  background-color: #e5e0e0;
+}
+
+.wrapper > i {
+  font-size: 5rem;
+  opacity: 0.4;
+  color: #3b3838;
+  position: absolute;
+}
+
+.wrapper > i:nth-child(1) {
+  top: 5%;
+  left: 12%;
+}
+
+.wrapper > i:nth-child(2) {
+  top: 19%;
+  left: 10%;
+}
+
+.wrapper > i:nth-child(3) {
+  top: 35%;
+  left: 21%;
+}
+
+.wrapper > i:nth-child(4) {
+  top: 53%;
+  left: 15%;
+}
+
+.wrapper > i:nth-child(5) {
+  top: 78%;
+  left: 9%;
+}
+
+.wrapper > i:nth-child(6) {
+  top: 43%;
+  left: 40%;
+}
+
+.wrapper > i:nth-child(7) {
+  top: 32%;
+  left: 56%;
+}
+
+.wrapper > i:nth-child(8) {
+  top: 7%;
+  right: 17%;
+}
+
+.wrapper > i:nth-child(9) {
+  top: 21%;
+  right: 18%;
+}
+
+.wrapper > i:nth-child(10) {
+  top: 49%;
+  right: 11%;
+}
+
+.wrapper > i:nth-child(11) {
+  top: 75%;
+  right: 30%;
+}
+
+.wrapper > i:nth-child(12) {
+  top: 59%;
+  left: 50%;
+}
+
+.wrapper .head {
+  text-align: center;
+  padding: 2rem;
+  margin: 1rem 0;
+  font-size: 4rem;
+  opacity: 0.8;
+  color: cadetblue;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 576px) {
+  .wrapper .head {
+    font-size: 3rem;
+  }
+}
+
+.wrapper .paginateTeachers {
+  width: 100%;
+  padding: 1rem 4rem;
+}
+
+.wrapper .prevBtn,
+.wrapper .nextBtn {
+  padding: 2rem 0;
+  font-size: 4rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 576px) {
+  .wrapper .prevBtn,
+  .wrapper .nextBtn {
+    font-size: 3rem;
+  }
+}
+
+.wrapper .prevBtn.disableBtn,
+.wrapper .nextBtn.disableBtn {
+  pointer-events: none;
+}
+
+.wrapper .prevBtn.disableBtn i,
+.wrapper .nextBtn.disableBtn i {
+  color: gray;
+}
+
+.wrapper .teacherLists {
+  height: 100%;
+}
+
+.wrapper .teacherLists .teacherCardWrapper {
+  z-index: 1;
+}
+
+.wrapper .teacherLists .teacherCard {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #fff;
+  padding: 2rem 0;
+  margin: 1rem 0.5rem;
+  border-radius: 0.3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.wrapper .teacherLists .teacherCard .teacherImg {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 576px) {
+  .wrapper .teacherLists .teacherCard .teacherImg {
+    width: 10rem;
+    height: 10rem;
+  }
+}
+
+.wrapper .teacherLists .teacherCard .teacherImg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.wrapper .teacherLists .teacherCard .teacherFooter {
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+.wrapper .teacherLists .teacherCard .teacherFooter .teacherName {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.wrapper .teacherLists .teacherCard .teacherFooter .teacherDetails {
+  font-size: 1.25rem;
+}
+
+.wrapper .teacherLists .teacherCard .teacherFooter .teacherCourse {
+  font-size: 2rem;
+  text-align: center;
+  z-index: 1;
+}
+
+#parallax .head,
+#parallax4 .head {
+  margin-left: -50rem;
+  opacity: 0;
+  -webkit-transition: 2s ease;
+  transition: 2s ease;
+}
+
+#parallax .teacherCardWrapper,
+#parallax4 .teacherCardWrapper {
+  -webkit-transform: translateY(30rem);
+          transform: translateY(30rem);
+  opacity: 0;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+#parallax .teacherCardWrapper:nth-child(1),
+#parallax4 .teacherCardWrapper:nth-child(1) {
+  -webkit-transition-delay: 0;
+          transition-delay: 0;
+}
+
+#parallax .teacherCardWrapper:nth-child(2),
+#parallax4 .teacherCardWrapper:nth-child(2) {
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
+}
+
+#parallax .teacherCardWrapper:nth-child(3),
+#parallax4 .teacherCardWrapper:nth-child(3) {
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+
+#parallax .teacherCardWrapper:nth-child(4),
+#parallax4 .teacherCardWrapper:nth-child(4) {
+  -webkit-transition-delay: 0.45s;
+          transition-delay: 0.45s;
+}
+
+#parallax .teacherCardWrapper:nth-child(5),
+#parallax4 .teacherCardWrapper:nth-child(5) {
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
+}
+
+#parallax .teacherCardWrapper:nth-child(6),
+#parallax4 .teacherCardWrapper:nth-child(6) {
+  -webkit-transition-delay: 0.75s;
+          transition-delay: 0.75s;
+}
+
+#parallax .teacherCardWrapper:nth-child(7),
+#parallax4 .teacherCardWrapper:nth-child(7) {
+  -webkit-transition-delay: 0.9s;
+          transition-delay: 0.9s;
+}
+
+#parallax .teacherCardWrapper:nth-child(8),
+#parallax4 .teacherCardWrapper:nth-child(8) {
+  -webkit-transition-delay: 1.05s;
+          transition-delay: 1.05s;
+}
+
+#parallax .prevBtn,
+#parallax4 .prevBtn {
+  margin-left: -15rem;
+  opacity: 0;
+  -webkit-transition: 2s ease;
+  transition: 2s ease;
+}
+
+#parallax .nextBtn,
+#parallax4 .nextBtn {
+  margin-right: -15rem;
+  opacity: 0;
+  -webkit-transition: 2s ease;
+  transition: 2s ease;
+}
+
+#parallax.active .head,
+#parallax4.active .head {
+  margin: 1rem 0;
+  opacity: 1;
+}
+
+#parallax.active .prevBtn,
+#parallax4.active .prevBtn {
+  margin-left: 0;
+  opacity: 1;
+  -webkit-transition-delay: 1.2s;
+          transition-delay: 1.2s;
+}
+
+#parallax.active .nextBtn,
+#parallax4.active .nextBtn {
+  margin-right: 0;
+  opacity: 1;
+  -webkit-transition-delay: 1.2s;
+          transition-delay: 1.2s;
+}
+
+#parallax.active .teacherCardWrapper,
+#parallax4.active .teacherCardWrapper {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+
+#parallax::before {
+  content: "";
+  position: absolute;
+  background: url("../../img/Flaticons/arrow-left.png") no-repeat center;
+  background-size: cover;
+  width: 12rem;
+  height: 12rem;
+  left: 0;
+  bottom: 0;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  opacity: 0.3;
+}
+
+#parallax2 .head {
+  margin-right: -50rem;
+  opacity: 0;
+  -webkit-transition: 2s ease;
+  transition: 2s ease;
+}
+
+#parallax2::before {
+  content: "";
+  position: absolute;
+  background: url("../../img/Flaticons/arrow-left.png") no-repeat center;
+  background-size: cover;
+  width: 12rem;
+  height: 12rem;
+  left: 0;
+  bottom: 0;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  opacity: 0.3;
+}
+
+#parallax3 .head {
+  margin-left: -50rem;
+  opacity: 0;
+  -webkit-transition: 2s ease;
+  transition: 2s ease;
+}
+
+#parallax3 .teacherCardWrapper,
+#parallax2 .teacherCardWrapper {
+  -webkit-transform: translateY(30rem);
+          transform: translateY(30rem);
+  opacity: 0;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+#parallax3 .teacherCardWrapper:nth-child(1),
+#parallax2 .teacherCardWrapper:nth-child(1) {
+  -webkit-transition-delay: 0;
+          transition-delay: 0;
+}
+
+#parallax3 .teacherCardWrapper:nth-child(2),
+#parallax2 .teacherCardWrapper:nth-child(2) {
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
+}
+
+#parallax3 .teacherCardWrapper:nth-child(3),
+#parallax2 .teacherCardWrapper:nth-child(3) {
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+
+#parallax3 .teacherCardWrapper:nth-child(4),
+#parallax2 .teacherCardWrapper:nth-child(4) {
+  -webkit-transition-delay: 0.45s;
+          transition-delay: 0.45s;
+}
+
+#parallax3 .teacherCardWrapper:nth-child(5),
+#parallax2 .teacherCardWrapper:nth-child(5) {
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
+}
+
+#parallax3 .teacherCardWrapper:nth-child(6),
+#parallax2 .teacherCardWrapper:nth-child(6) {
+  -webkit-transition-delay: 0.75s;
+          transition-delay: 0.75s;
+}
+
+#parallax3 .teacherCardWrapper:nth-child(7),
+#parallax2 .teacherCardWrapper:nth-child(7) {
+  -webkit-transition-delay: 0.9s;
+          transition-delay: 0.9s;
+}
+
+#parallax3 .teacherCardWrapper:nth-child(8),
+#parallax2 .teacherCardWrapper:nth-child(8) {
+  -webkit-transition-delay: 1.05s;
+          transition-delay: 1.05s;
+}
+
+#parallax3 .prevBtn,
+#parallax2 .prevBtn {
+  margin-left: -15rem;
+  opacity: 0;
+  -webkit-transition: 2s ease;
+  transition: 2s ease;
+}
+
+#parallax3 .nextBtn,
+#parallax2 .nextBtn {
+  margin-right: -15rem;
+  opacity: 0;
+  -webkit-transition: 2s ease;
+  transition: 2s ease;
+}
+
+#parallax3.active .head,
+#parallax2.active .head {
+  margin: 1rem 0;
+  opacity: 1;
+}
+
+#parallax3.active .prevBtn,
+#parallax2.active .prevBtn {
+  margin-left: 0;
+  opacity: 1;
+  -webkit-transition-delay: 1.2s;
+          transition-delay: 1.2s;
+}
+
+#parallax3.active .nextBtn,
+#parallax2.active .nextBtn {
+  margin-right: 0;
+  opacity: 1;
+  -webkit-transition-delay: 1.2s;
+          transition-delay: 1.2s;
+}
+
+#parallax3.active .teacherCardWrapper,
+#parallax2.active .teacherCardWrapper {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+
+#parallax3::after,
+#parallax2::after {
+  content: "";
+  position: absolute;
+  background: url("../../img/Flaticons/arrow-right.png") no-repeat center;
+  background-size: cover;
+  width: 12rem;
+  height: 12rem;
+  right: 0;
+  top: 0;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  opacity: 0.3;
+}
+/*# sourceMappingURL=teachers.css.map */

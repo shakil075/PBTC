@@ -5,6 +5,7 @@ import Routine from "./routine/Routine";
 import Teacher from "./teacher/Teacher";
 
 const StudentPannel = ({ show }) => {
+    console.log("Student Pannel Rendering");
     if (show === "home") {
         return (
             <div className="content_body">

@@ -10,6 +10,9 @@ import Home from "./components/Home";
 import { studentList, teacherList } from "./lib/helper";
 import BanggobondhuConrenr from "./pages/BanggobondhuConrenr";
 import Hsc from "./components/hsc/Hsc";
+import Degree from "./components/degree/Degree";
+import Course from "./components/courses/Course";
+import Teachers from "./components/allTeachers/Teachers";
 
 const App = () => {
     const [show, setShow] = useState("home");
@@ -19,6 +22,16 @@ const App = () => {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/hsc" element={<Hsc />} />
+                <Route path="/degree" element={<Degree />} />
+                <Route path="/science-course" element={<Course />} />
+                <Route
+                    path="/hsc-teachers"
+                    element={<Teachers teacher="hsc" />}
+                />
+                <Route
+                    path="/degree-teachers"
+                    element={<Teachers teacher="degree" />}
+                />
                 <Route
                     path="/student-dashboard"
                     element={

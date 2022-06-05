@@ -7,7 +7,7 @@ import "../css/footer/footer.css";
 const Layout = ({ children }) => {
     const [windoPosition, setWindowPosition] = useState(0);
 
-    let showNav = true;
+    let showNav = false;
 
     const pathDir = useLocation().pathname;
 
@@ -18,7 +18,7 @@ const Layout = ({ children }) => {
     ) {
         showNav = false;
     } else {
-        showNav = true;
+        // showNav = true;
     }
 
     useEffect(() => {
@@ -37,6 +37,7 @@ const Layout = ({ children }) => {
         <>
             {showNav ? <Nav /> : null}
             <main>{children}</main>
+            {showNav ? <div class="sub-footer"></div> : null}
             {showNav ? <Footer /> : null}
         </>
     );

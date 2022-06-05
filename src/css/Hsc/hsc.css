@@ -62,8 +62,14 @@ section {
   text-align: center;
 }
 
-/* header */
-.banner {
+.degreeContent {
+  /* header */
+  /* subject*/
+  /* ability section */
+  /* Facility section */
+}
+
+.degreeContent .banner {
   background: url("../../img/pages/banner.jpg") no-repeat;
   background-size: cover;
   background-position: center;
@@ -72,25 +78,25 @@ section {
 }
 
 @media screen and (max-width: 768px) {
-  .banner {
+  .degreeContent .banner {
     height: 100% !important;
   }
 }
 
-.banner .banner-wrap {
+.degreeContent .banner .banner-wrap {
   background: linear-gradient(108deg, #1ba94c 65%, transparent 65%);
   width: 43%;
   height: 53.9rem;
 }
 
 @media screen and (max-width: 768px) {
-  .banner .banner-wrap {
+  .degreeContent .banner .banner-wrap {
     width: 60%;
     height: 43rem;
   }
 }
 
-.banner .banner-wrap .banner-content {
+.degreeContent .banner .banner-wrap .banner-content {
   height: 53.9rem;
   position: absolute;
   top: 0;
@@ -116,13 +122,13 @@ section {
 }
 
 @media screen and (max-width: 768px) {
-  .banner .banner-wrap .banner-content {
+  .degreeContent .banner .banner-wrap .banner-content {
     width: 42%;
     height: 43rem;
   }
 }
 
-.banner .banner-wrap .banner-content h1 {
+.degreeContent .banner .banner-wrap .banner-content h1 {
   font-size: 4rem;
   font-weight: 700;
   margin-bottom: 2rem;
@@ -130,23 +136,23 @@ section {
 }
 
 @media screen and (max-width: 768px) {
-  .banner .banner-wrap .banner-content h1 {
+  .degreeContent .banner .banner-wrap .banner-content h1 {
     font-size: 3.5rem;
   }
 }
 
-.banner .banner-wrap .banner-content small {
+.degreeContent .banner .banner-wrap .banner-content small {
   font-size: 1.2rem;
 }
 
 @media screen and (max-width: 768px) {
-  .banner .banner-wrap .banner-content small {
+  .degreeContent .banner .banner-wrap .banner-content small {
     width: 90%;
     font-size: 1.25rem;
   }
 }
 
-.banner .banner-wrap .banner-angle {
+.degreeContent .banner .banner-wrap .banner-angle {
   background: linear-gradient(108deg, rgba(27, 169, 76, 0.5) 65%, transparent 65%);
   width: 50%;
   height: 53.9rem;
@@ -156,18 +162,17 @@ section {
 }
 
 @media screen and (max-width: 768px) {
-  .banner .banner-wrap .banner-angle {
+  .degreeContent .banner .banner-wrap .banner-angle {
     width: 80%;
     height: 43rem;
   }
 }
 
-/* subject*/
-.subject {
+.degreeContent .subject {
   margin: 5rem auto;
 }
 
-.subject .card {
+.degreeContent .subject .card {
   position: relative;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -192,14 +197,18 @@ section {
 }
 
 @media screen and (max-width: 576px) {
-  .subject .card {
+  .degreeContent .subject .card {
     margin: 2rem;
     border-bottom-left-radius: 5rem;
     border-top-right-radius: 5rem;
   }
 }
 
-.subject .card .sub-img {
+.degreeContent .subject .card .card-title {
+  font-size: 1.25rem;
+}
+
+.degreeContent .subject .card .sub-img {
   width: 7rem;
   height: 7rem;
   border-radius: 50%;
@@ -214,7 +223,7 @@ section {
           align-items: center;
 }
 
-.subject .card .sub-img img {
+.degreeContent .subject .card .sub-img img {
   width: 60%;
   height: 60%;
   background-color: #fff;
@@ -222,34 +231,34 @@ section {
      object-fit: cover;
 }
 
-.subject .card.science .sub-img {
+.degreeContent .subject .card.science .sub-img {
   border: 0.3rem solid #1ba94c;
 }
 
-.subject .card.commerce {
+.degreeContent .subject .card.commerce {
   -webkit-box-shadow: 0 0 0.1rem 0.1rem #f05323;
           box-shadow: 0 0 0.1rem 0.1rem #f05323;
 }
 
-.subject .card.commerce .sub-img {
+.degreeContent .subject .card.commerce .sub-img {
   border: 0.3rem solid #f05323;
 }
 
-.subject .card.arts {
+.degreeContent .subject .card.arts {
   -webkit-box-shadow: 0 0 0.1rem 0.1rem #d31c5a;
           box-shadow: 0 0 0.1rem 0.1rem #d31c5a;
 }
 
-.subject .card.arts .sub-img {
+.degreeContent .subject .card.arts .sub-img {
   border: 0.3rem solid #d31c5a;
 }
 
-.subject .card:hover {
+.degreeContent .subject .card:hover {
   border-bottom-left-radius: 5rem;
   border-top-right-radius: 5rem;
 }
 
-.subject .card::before {
+.degreeContent .subject .card::before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -258,6 +267,8 @@ section {
   height: 100%;
   left: -10%;
   top: 10%;
+  font-size: 2rem;
+  opacity: 0.8;
   -webkit-transform: scale(0.5);
           transform: scale(0.5);
   -webkit-transform-origin: left bottom;
@@ -268,7 +279,7 @@ section {
 }
 
 @media screen and (max-width: 576px) {
-  .subject .card::before {
+  .degreeContent .subject .card::before {
     -webkit-transform: scale(1);
             transform: scale(1);
     left: -5%;
@@ -276,7 +287,7 @@ section {
   }
 }
 
-.subject .card::after {
+.degreeContent .subject .card::after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -285,6 +296,7 @@ section {
   height: 100%;
   right: -10%;
   top: -10%;
+  opacity: 0.8;
   -webkit-transform: scale(0.5);
           transform: scale(0.5);
   -webkit-transform-origin: right top;
@@ -295,7 +307,7 @@ section {
 }
 
 @media screen and (max-width: 576px) {
-  .subject .card::after {
+  .degreeContent .subject .card::after {
     -webkit-transform: scale(1);
             transform: scale(1);
     right: -5%;
@@ -303,29 +315,29 @@ section {
   }
 }
 
-.subject .card:hover::before {
+.degreeContent .subject .card:hover::before {
   -webkit-transform: scale(1);
           transform: scale(1);
   left: -5%;
   top: 5%;
 }
 
-.subject .card:hover::after {
+.degreeContent .subject .card:hover::after {
   -webkit-transform: scale(1);
           transform: scale(1);
   right: -5%;
   top: -5%;
 }
 
-.subject .card.commerce::after, .subject .card.commerce::before {
+.degreeContent .subject .card.commerce::after, .degreeContent .subject .card.commerce::before {
   background-color: #f05323;
 }
 
-.subject .card.arts::after, .subject .card.arts::before {
+.degreeContent .subject .card.arts::after, .degreeContent .subject .card.arts::before {
   background-color: #d31c5a;
 }
 
-.faculty .card {
+.degreeContent .faculty .card {
   border-radius: 0.6rem;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -333,21 +345,21 @@ section {
   transition: 0.3s ease-in-out;
 }
 
-.faculty .card .btn {
+.degreeContent .faculty .card .btn {
   font-size: 1.25rem;
 }
 
 @media screen and (max-width: 576px) {
-  .faculty .card {
+  .degreeContent .faculty .card {
     max-width: 30rem;
   }
-  .faculty .card .btn {
+  .degreeContent .faculty .card .btn {
     font-size: 1.5rem;
   }
 }
 
 @media screen and (min-width: 577px) {
-  .faculty .card:hover {
+  .degreeContent .faculty .card:hover {
     -webkit-transform: translateY(-0.4rem);
             transform: translateY(-0.4rem);
     -webkit-box-shadow: 0 0 0.5rem 0 #00000073;
@@ -355,12 +367,12 @@ section {
   }
 }
 
-.faculty .card .card-title {
+.degreeContent .faculty .card .card-title {
   font-size: 1.5rem;
   cursor: default;
 }
 
-.faculty .card.science a {
+.degreeContent .faculty .card.science a {
   border-color: 0.2rem solid #1ba94c;
   background-color: #1ba94c;
   color: #fff;
@@ -368,13 +380,13 @@ section {
   transition: 0.3s ease;
 }
 
-.faculty .card.science .card-footer:hover a {
+.degreeContent .faculty .card.science .card-footer:hover a {
   border-color: #1ba94c;
   background-color: transparent;
   color: #1ba94c;
 }
 
-.faculty .card.commerce a {
+.degreeContent .faculty .card.commerce a {
   border-color: 0.2rem solid #f05323;
   background-color: #f05323;
   color: #fff;
@@ -382,13 +394,13 @@ section {
   transition: 0.3s ease;
 }
 
-.faculty .card.commerce .card-footer:hover a {
+.degreeContent .faculty .card.commerce .card-footer:hover a {
   border-color: #f05323;
   background-color: transparent;
   color: #f05323;
 }
 
-.faculty .card.arts a {
+.degreeContent .faculty .card.arts a {
   border-color: 0.2rem solid #D31C5A;
   background-color: #d31c5a;
   color: #fff;
@@ -396,25 +408,24 @@ section {
   transition: 0.3s ease;
 }
 
-.faculty .card.arts .card-footer:hover a {
+.degreeContent .faculty .card.arts .card-footer:hover a {
   border-color: #d31c5a;
   background-color: transparent;
   color: #d31c5a;
 }
 
-/* ability section */
-.ability p {
+.degreeContent .ability p {
   font-size: 1.6rem;
   margin: 1.5rem auto;
   line-height: 1.5;
   color: #383838;
 }
 
-.ability-head {
+.degreeContent .ability-head {
   margin-bottom: 7rem;
 }
 
-.ability-content {
+.degreeContent .ability-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -432,41 +443,40 @@ section {
   margin-bottom: 4rem;
 }
 
-.ability-content img {
+.degreeContent .ability-content img {
   margin-bottom: 0.5rem;
   -webkit-transition: 0.15s;
   transition: 0.15s;
 }
 
-.ability-content img:hover {
+.degreeContent .ability-content img:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
-.ability-content small {
+.degreeContent .ability-content small {
   font-size: 1.25rem;
   font-weight: 500;
   text-align: center;
 }
 
-/* Facility section */
-.facility .lab-img {
+.degreeContent .facility .lab-img {
   width: 70%;
   height: 20rem;
 }
 
 @media screen and (max-width: 991px) and (min-width: 769px) {
-  .facility .lab-img {
+  .degreeContent .facility .lab-img {
     width: 85%;
   }
 }
 
-.facility .lab {
+.degreeContent .facility .lab {
   position: relative;
   margin: 4rem 0;
 }
 
-.lab-img img {
+.degreeContent .lab-img img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -474,7 +484,7 @@ section {
   border-radius: 1rem;
 }
 
-.lab-content {
+.degreeContent .lab-content {
   width: 15rem;
   height: 6rem;
   border-radius: 1rem;
@@ -496,33 +506,33 @@ section {
 }
 
 @media screen and (max-width: 991px) and (min-width: 769px) {
-  .lab-content {
+  .degreeContent .lab-content {
     right: 1rem;
   }
 }
 
-.green {
+.degreeContent .green {
   background: #1ba94c;
 }
 
-.maroon {
+.degreeContent .maroon {
   color: #98002e;
 }
 
-.yellow {
+.degreeContent .yellow {
   color: #eea90a;
 }
 
-.yellow-back {
+.degreeContent .yellow-back {
   background-color: #eea90a;
 }
 
-.maroon-light {
+.degreeContent .maroon-light {
   color: #e5185b;
 }
 
-.apply .button,
-.faculty .button {
+.degreeContent .apply .button,
+.degreeContent .faculty .button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -534,8 +544,8 @@ section {
           justify-content: center;
 }
 
-.apply .button .btn,
-.faculty .button .btn {
+.degreeContent .apply .button .btn,
+.degreeContent .faculty .button .btn {
   position: relative;
   padding: 0.5rem 5rem;
   color: #98002e;
@@ -552,8 +562,8 @@ section {
 }
 
 @media screen and (min-width: 577px) {
-  .apply .button .btn::before,
-  .faculty .button .btn::before {
+  .degreeContent .apply .button .btn::before,
+  .degreeContent .faculty .button .btn::before {
     content: "";
     position: absolute;
     background-color: #98002e;
@@ -577,8 +587,8 @@ section {
     -webkit-transition: 0.3s;
     transition: 0.3s;
   }
-  .apply .button .btn:hover::before,
-  .faculty .button .btn:hover::before {
+  .degreeContent .apply .button .btn:hover::before,
+  .degreeContent .faculty .button .btn:hover::before {
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
@@ -586,56 +596,46 @@ section {
   }
 }
 
-.faculty .card-footer {
+.degreeContent .faculty .card-footer {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   padding: 0;
 }
 
-.faculty .button .btn::before {
+.degreeContent .faculty .button .btn::before {
   content: "SEE ALL FACULTY MEMBERS";
 }
 
-.apply .button .btn::before {
+.degreeContent .apply .button .btn::before {
   content: "Choose Government College As Your Next Destination";
 }
 
-.sub-footer {
-  background: url("../../img/pages/sub-footer.jpg") no-repeat;
-  background-position: top;
-  background-size: cover;
-  height: 45rem;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 @media screen and (max-width: 768px) {
-  html {
+  .degreeContent html {
     font-size: 52%;
   }
-  .sub-footer {
+  .degreeContent .sub-footer {
     background-position: left;
     background-size: cover;
     height: 45rem;
   }
-  .facility .lab-img {
+  .degreeContent .facility .lab-img {
     margin: auto;
   }
-  .button-group .btn {
+  .degreeContent .button-group .btn {
     padding: 1rem 3rem;
   }
-  .small-container {
+  .degreeContent .small-container {
     width: 40rem;
     margin: auto;
   }
-  .banner-wrap {
+  .degreeContent .banner-wrap {
     background: linear-gradient(108deg, #1ba94c 65%, transparent 65%);
     width: 43%;
     height: 43.9rem;
   }
-  .banner-angle {
+  .degreeContent .banner-angle {
     background: linear-gradient(108deg, rgba(27, 169, 76, 0.5) 65%, transparent 65%);
     height: 43.9rem;
   }

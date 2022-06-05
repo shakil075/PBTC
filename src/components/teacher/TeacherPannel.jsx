@@ -5,6 +5,8 @@ import HomeContent from "./home/HomeContent";
 import Result from "./result/Result";
 
 const TeacherPannel = ({ show }) => {
+    console.log("Teacher Pannel Rendering");
+
     if (show === "home") {
         return (
             <div className="content_body">
