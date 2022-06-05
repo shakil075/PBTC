@@ -2,21 +2,207 @@
   width: 100vw;
   height: 100vh;
   position: relative;
-  border: 2px solid green;
 }
 
 .sectionOne {
+  position: relative;
   width: 100%;
   height: 100%;
 }
 
-.sectionOne::before {
+.sectionOne .imageDiv {
+  width: 70rem;
+  height: 70rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+@media screen and (max-width: 1200px) {
+  .sectionOne .imageDiv {
+    width: 60rem;
+    height: 60rem;
+    bottom: 5%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .sectionOne .imageDiv {
+    width: 50rem;
+    height: 50rem;
+    bottom: 10%;
+  }
+}
+
+.sectionOne .imageDiv img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-filter: contrast(1.1) brightness(0.9);
+          filter: contrast(1.1) brightness(0.9);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.sectionOne .imageDiv::before {
+  content: "";
+  position: absolute;
+  background-color: red;
+  width: 60%;
+  height: 60%;
+  border-radius: 50%;
+  z-index: -1;
+  left: 50%;
+  top: 50%;
+  -webkit-box-shadow: 0 0 0.5rem 0.1rem #7d0404, inset 0 0 4rem 0.5rem #690202;
+          box-shadow: 0 0 0.5rem 0.1rem #7d0404, inset 0 0 4rem 0.5rem #690202;
+  -webkit-animation: imgBox 3s linear infinite alternate;
+          animation: imgBox 3s linear infinite alternate;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.sectionOne .imageDiv::after {
   content: "";
   position: absolute;
   background-color: green;
-  width: 70%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 30% 70% 70% 30% / 30% 45% 55% 70%;
+  -webkit-box-shadow: 0 0 0.1rem 0.1rem #015401, inset 0 0 4rem 0.5rem #024d02;
+          box-shadow: 0 0 0.1rem 0.1rem #015401, inset 0 0 4rem 0.5rem #024d02;
+  -webkit-animation: imgBox 3s linear infinite alternate;
+          animation: imgBox 3s linear infinite alternate;
+  z-index: -2;
+}
+
+.sectionOne .heading {
+  position: relative;
+}
+
+.sectionOne .heading .firstHead {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: 900;
+  color: transparent;
+  -webkit-text-stroke: 0.1rem #383d52;
+}
+
+.sectionOne .heading .firstHead span {
+  line-height: 10rem;
+  font-size: 10rem;
+}
+
+.sectionOne .heading .firstHead span:nth-child(2) {
+  margin-left: 10rem;
+}
+
+.sectionOne .heading .firstHead span:nth-child(3) {
+  margin-left: 20rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .sectionOne .heading .firstHead span {
+    font-size: 8rem;
+    line-height: 7rem;
+  }
+  .sectionOne .heading .firstHead span:nth-child(2) {
+    margin-left: 8rem;
+  }
+  .sectionOne .heading .firstHead span:nth-child(3) {
+    margin-left: 16rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .sectionOne .heading .firstHead span {
+    font-size: 6rem;
+    line-height: 6rem;
+  }
+  .sectionOne .heading .firstHead span:nth-child(2) {
+    margin-left: 6rem;
+  }
+  .sectionOne .heading .firstHead span:nth-child(3) {
+    margin-left: 12rem;
+  }
+}
+
+.sectionOne .heading .secondHead {
+  position: absolute;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0 0.25rem;
+  font-weight: 600;
+  top: 50%;
   left: 0;
-  top: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: transparent;
+  font-size: 5rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .sectionOne .heading .secondHead {
+    font-size: 4rem;
+  }
+}
+
+.sectionOne .heading .secondHead::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 0;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(green), color-stop(red), to(green));
+  background: linear-gradient(to right, green, red, green);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  border-right: 0.3rem solid green;
+  overflow: hidden;
+  -webkit-animation: mujib 6s linear infinite;
+          animation: mujib 6s linear infinite;
+}
+
+@-webkit-keyframes mujib {
+  0%,
+  10%,
+  100% {
+    width: 0;
+  }
+  70%,
+  90% {
+    width: 100%;
+  }
+}
+
+@keyframes mujib {
+  0%,
+  10%,
+  100% {
+    width: 0;
+  }
+  70%,
+  90% {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=corner.css.map */

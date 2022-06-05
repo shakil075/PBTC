@@ -2,19 +2,164 @@
     width: 100vw;
     height: 100vh;
     position: relative;
-    border: 2px solid green;
 }
 .sectionOne {
+    position: relative;
     width: 100%;
     height: 100%;
 
-    &::before {
-        content: "";
+    .imageDiv {
+        width: 70rem;
+        height: 70rem;
         position: absolute;
-        background-color: green;
-        width: 70%;
-        height: 80%;
-        left: 0;
-        top: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+
+        @media screen and (max-width: 1200px) {
+            width: 60rem;
+            height: 60rem;
+            bottom: 5%;
+        }
+
+        @media screen and (max-width: 991px) {
+            width: 50rem;
+            height: 50rem;
+            bottom: 10%;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: contrast(1.1) brightness(0.9);
+            transform: scale(1.1);
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            background-color: red;
+            width: 60%;
+            height: 60%;
+            border-radius: 50%;
+            z-index: -1;
+            left: 50%;
+            top: 50%;
+            box-shadow: 0 0 0.5rem 0.1rem rgb(125, 4, 4),
+                inset 0 0 4rem 0.5rem rgb(105, 2, 2);
+            animation: imgBox 3s linear infinite alternate;
+            transform: translate(-50%, -50%);
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            background-color: green;
+            width: 100%;
+            height: 100%;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 30% 70% 70% 30% / 30% 45% 55% 70%;
+            box-shadow: 0 0 0.1rem 0.1rem rgb(1, 84, 1),
+                inset 0 0 4rem 0.5rem rgb(2, 77, 2);
+            animation: imgBox 3s linear infinite alternate;
+            z-index: -2;
+        }
+    }
+
+    .heading {
+        position: relative;
+
+        .firstHead {
+            width: fit-content;
+            font-weight: 900;
+            color: transparent;
+            -webkit-text-stroke: 0.1rem #383d52;
+            span {
+                line-height: 10rem;
+                font-size: 10rem;
+
+                &:nth-child(2) {
+                    margin-left: 10rem;
+                }
+
+                &:nth-child(3) {
+                    margin-left: 20rem;
+                }
+                @media screen and (max-width: 1200px) {
+                    font-size: 8rem;
+                    line-height: 7rem;
+
+                    &:nth-child(2) {
+                        margin-left: 8rem;
+                    }
+
+                    &:nth-child(3) {
+                        margin-left: 16rem;
+                    }
+                }
+
+                @media screen and (max-width: 991px) {
+                    font-size: 6rem;
+                    line-height: 6rem;
+
+                    &:nth-child(2) {
+                        margin-left: 6rem;
+                    }
+
+                    &:nth-child(3) {
+                        margin-left: 12rem;
+                    }
+                }
+            }
+        }
+
+        .secondHead {
+            position: absolute;
+            width: fit-content;
+            padding: 0 0.25rem;
+            font-weight: 600;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            color: transparent;
+            font-size: 5rem;
+
+            @media screen and (max-width: 1200px) {
+                font-size: 4rem;
+            }
+
+            &::before {
+                content: attr(data-text);
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+                width: 0;
+                height: 100%;
+                background: linear-gradient(to right, green, red, green);
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+                border-right: 0.3rem solid green;
+                overflow: hidden;
+                animation: mujib 6s linear infinite;
+
+                @keyframes mujib {
+                    0%,
+                    10%,
+                    100% {
+                        width: 0;
+                    }
+                    70%,
+                    90% {
+                        width: 100%;
+                    }
+                }
+            }
+        }
     }
 }
