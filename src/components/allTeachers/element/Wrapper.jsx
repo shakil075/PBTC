@@ -1,8 +1,6 @@
 import React from "react";
 
 const Wrapper = ({ scienceIconLists, children, cls, ...rest }) => {
-    console.log("Wrapper Page Rendering");
-
     return (
         <div {...rest} className={cls}>
             {scienceIconLists.length > 0 &&
